@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<EntityDescriptor entityID="http://idp5.canadacentral.cloudapp.azure.com:80/opensso" xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:query="urn:oasis:names:tc:SAML:metadata:ext:query" xmlns:mdattr="urn:oasis:names:tc:SAML:metadata:attribute" xmlns:saml="urn:oasis:names:tc:SAML:2.0:assertion" xmlns:xenc="http://www.w3.org/2001/04/xmlenc#" xmlns:x509qry="urn:oasis:names:tc:SAML:metadata:X509:query" xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+    <IDPSSODescriptor WantAuthnRequestsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+        <KeyDescriptor use="signing">
+            <ds:KeyInfo>
+                
+                
+                <ds:X509Data>
+                    <ds:X509Certificate>
+MIIDMzCCAhugAwIBAgIJAJlvUZPPuaVEMA0GCSqGSIb3DQEBCwUAMDAxLjAsBgNVBAMMJWlkcDUu
+Y2FuYWRhY2VudHJhbC5jbG91ZGFwcC5henVyZS5jb20wHhcNMTkwNzMwMTQ0NjE2WhcNMjkwNzI3
+MTQ0NjE2WjAwMS4wLAYDVQQDDCVpZHA1LmNhbmFkYWNlbnRyYWwuY2xvdWRhcHAuYXp1cmUuY29t
+MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEA5k5BX8WLSbBcSVOzngfUJBy4r6eW9oNj
+mgU8exIsKDC/UkUriOFKkwKGsDvKwP2dXiGHJpnaNBjCHuIBSR8JDT3GrYTqE73gldOmZ5h7EUF8
++Zo5epJmiQGn/jsrGGWLje/kQetJh1IjV/jAwJZixS9B8IzXj0cygnrehHnpjdWX+6DocxmMlLR5
+2W8a3XspOkFiti4JHJfDaEQAYxi4ErsCQJ/HUROrRK81HguHCxsKyQefdJSEryiWBTbD2XxluhlA
+OfvScL8bQLvAzso9WiMZ9aHHGX6KXG8LEw/aPERwYJu6R+SwKyolGCY58JHvccRsJpkKtBD9zN6i
+xGW79QIDAQABo1AwTjAdBgNVHQ4EFgQUI8H0pb8N2HrPuSlxU5obAIfSwNAwHwYDVR0jBBgwFoAU
+I8H0pb8N2HrPuSlxU5obAIfSwNAwDAYDVR0TBAUwAwEB/zANBgkqhkiG9w0BAQsFAAOCAQEAVO4N
+DdFX7/gZGkQUuUVZGMuVBkyazX9BXRGW0eA2GVlupa3pY5VETcqGFWmMzmfEQNdaKa79HN0gpW9N
+nXZGVLk9dKBaaNPFBCAJ0ur8NeLOsRj98BVRrep9+Wfm6KDPVsWzRRs73c3BVqyqJedIPQroecTk
+wousPX/ynaLBmSacO1J4AXqjdF4IinLhLYtZ50reWPaNtrSDIC08ehf4619mxW9PE0DL4MshsUmv
+4SVxPtrl22WwIW13yIIMLOMKmDbbnSh5VsRV3OeLVm24lLa/WzUuAhUHTxh5L/xq5vFWXRRM5UmE
+5eClliv1zZUPuLSco/tlCQWdh97R06E1ZA==
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        <ArtifactResolutionService index="0" isDefault="true" Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/ArtifactResolver/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPSloRedirect/metaAlias/idp" ResponseLocation="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPSloRedirect/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPSloPOST/metaAlias/idp" ResponseLocation="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPSloPOST/metaAlias/idp"/>
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPSloSoap/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPMniRedirect/metaAlias/idp" ResponseLocation="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPMniRedirect/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPMniPOST/metaAlias/idp" ResponseLocation="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPMniPOST/metaAlias/idp"/>
+        <ManageNameIDService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/IDPMniSoap/metaAlias/idp"/>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:persistent</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:emailAddress</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:unspecified</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:WindowsDomainQualifiedName</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:kerberos</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:1.1:nameid-format:X509SubjectName</NameIDFormat>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/SSORedirect/metaAlias/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/SSOPOST/metaAlias/idp"/>
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/SSOSoap/metaAlias/idp"/>
+        <NameIDMappingService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/NIMSoap/metaAlias/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/AIDReqSoap/IDPRole/metaAlias/idp"/>
+        <AssertionIDRequestService Binding="urn:oasis:names:tc:SAML:2.0:bindings:URI" Location="http://idp5.canadacentral.cloudapp.azure.com:80/opensso/AIDReqUri/IDPRole/metaAlias/idp"/>
+    </IDPSSODescriptor>
+</EntityDescriptor>
+

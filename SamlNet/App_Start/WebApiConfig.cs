@@ -1,5 +1,6 @@
 ﻿using Newtonsoft.Json.Serialization;
 using System.Web.Http;
+using SamlNet.Handlers;
 
 namespace SamlNet
 {
@@ -11,12 +12,15 @@ namespace SamlNet
 
             RegisterFormatters(config);
 
+            config.MessageHandlers.Add(new UserHandler());
+
+
             // Web API routes
             config.MapHttpAttributeRoutes();
 
             config.Routes.MapHttpRoute(
-                name: "DefaultApi",
-                routeTemplate: "api/{controller}/{id}",
+                name: "ActionApi",
+                routeTemplate: "api/{controller}/{action}/{id}",
                 defaults: new {id = RouteParameter.Optional}
             );
         }
